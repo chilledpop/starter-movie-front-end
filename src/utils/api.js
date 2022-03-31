@@ -1,8 +1,10 @@
 const process = require('process');
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+  process.env.NODE_ENV.REACT_APP_API_BASE_URL || "http://localhost:5000";
 
+  console.log(API_BASE_URL);
+  
 /**
  * Defines the default headers for these functions to work with `json-server`
  */
